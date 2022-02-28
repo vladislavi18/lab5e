@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/lab5e.dir/libs/algorithms/algorithms.c.obj"
+  "CMakeFiles/lab5e.dir/libs/data_structures/string_/string_.c.obj"
   "CMakeFiles/lab5e.dir/main.c.obj"
   "lab5e.exe"
   "lab5e.exe.manifest"

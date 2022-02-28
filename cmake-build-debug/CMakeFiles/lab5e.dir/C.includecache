@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Program Files/CLionProjects/lab5e/libs/algorithms/algorithms.h
+stdio.h
+-
+stdbool.h
+-
+
+D:/Program Files/CLionProjects/lab5e/libs/data_structures/string_/string_.h
+../../algorithms/algorithms.h
+D:/Program Files/CLionProjects/lab5e/libs/algorithms/algorithms.h
+ctype.h
+-
+assert.h
+-
+memory.h
+-
+malloc.h
+-
+
+D:/Program Files/CLionProjects/lab5e/libs/data_structures/string_/tasks/task1.h
+../string_.h
+D:/Program Files/CLionProjects/lab5e/libs/data_structures/string_/string_.h
+
+D:/Program Files/CLionProjects/lab5e/main.c
+stdio.h
+-
+libs/data_structures/string_/string_.h
+D:/Program Files/CLionProjects/lab5e/libs/data_structures/string_/string_.h
+libs/data_structures/string_/tasks/task1.h
+D:/Program Files/CLionProjects/lab5e/libs/data_structures/string_/tasks/task1.h
+

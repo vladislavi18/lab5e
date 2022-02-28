@@ -128,6 +128,54 @@ lab5e/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab5e.dir\build.make CMakeFiles/lab5e.dir/build
 .PHONY : lab5e/fast
 
+libs/algorithms/algorithms.obj: libs/algorithms/algorithms.c.obj
+.PHONY : libs/algorithms/algorithms.obj
+
+# target to build an object file
+libs/algorithms/algorithms.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab5e.dir\build.make CMakeFiles/lab5e.dir/libs/algorithms/algorithms.c.obj
+.PHONY : libs/algorithms/algorithms.c.obj
+
+libs/algorithms/algorithms.i: libs/algorithms/algorithms.c.i
+.PHONY : libs/algorithms/algorithms.i
+
+# target to preprocess a source file
+libs/algorithms/algorithms.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab5e.dir\build.make CMakeFiles/lab5e.dir/libs/algorithms/algorithms.c.i
+.PHONY : libs/algorithms/algorithms.c.i
+
+libs/algorithms/algorithms.s: libs/algorithms/algorithms.c.s
+.PHONY : libs/algorithms/algorithms.s
+
+# target to generate assembly for a file
+libs/algorithms/algorithms.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab5e.dir\build.make CMakeFiles/lab5e.dir/libs/algorithms/algorithms.c.s
+.PHONY : libs/algorithms/algorithms.c.s
+
+libs/data_structures/string_/string_.obj: libs/data_structures/string_/string_.c.obj
+.PHONY : libs/data_structures/string_/string_.obj
+
+# target to build an object file
+libs/data_structures/string_/string_.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab5e.dir\build.make CMakeFiles/lab5e.dir/libs/data_structures/string_/string_.c.obj
+.PHONY : libs/data_structures/string_/string_.c.obj
+
+libs/data_structures/string_/string_.i: libs/data_structures/string_/string_.c.i
+.PHONY : libs/data_structures/string_/string_.i
+
+# target to preprocess a source file
+libs/data_structures/string_/string_.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab5e.dir\build.make CMakeFiles/lab5e.dir/libs/data_structures/string_/string_.c.i
+.PHONY : libs/data_structures/string_/string_.c.i
+
+libs/data_structures/string_/string_.s: libs/data_structures/string_/string_.c.s
+.PHONY : libs/data_structures/string_/string_.s
+
+# target to generate assembly for a file
+libs/data_structures/string_/string_.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab5e.dir\build.make CMakeFiles/lab5e.dir/libs/data_structures/string_/string_.c.s
+.PHONY : libs/data_structures/string_/string_.c.s
+
 main.obj: main.c.obj
 .PHONY : main.obj
 
@@ -161,6 +209,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... lab5e
+	@echo ... libs/algorithms/algorithms.obj
+	@echo ... libs/algorithms/algorithms.i
+	@echo ... libs/algorithms/algorithms.s
+	@echo ... libs/data_structures/string_/string_.obj
+	@echo ... libs/data_structures/string_/string_.i
+	@echo ... libs/data_structures/string_/string_.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
