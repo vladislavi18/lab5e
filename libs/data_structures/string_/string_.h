@@ -66,6 +66,8 @@ char *copyIfReverse(char *rbeginSource, const char *rendSource,
 #define ASSERT_STRING(expected, got) assertString(expected, got, \
 __FILE__ , __FUNCTION__ , __LINE__ )
 
+#define MAX_STRING_SIZE 100
+char stringBuffer[MAX_STRING_SIZE + 1];
 
 void assertString(const char *expected, char *got,
                   char const *fileName, char const *funcName,

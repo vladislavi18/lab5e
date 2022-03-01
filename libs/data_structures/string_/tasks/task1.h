@@ -9,11 +9,28 @@ void removeNonLetters(char *s) {
     *destination = '\0';
 }
 
-void test_digitToStartTransform_oneWord() {
+void test_removeNonLetters_spacesBetweenEachCharacter() {
     char s[] = " H i 1 2 3 ";
     removeNonLetters(s);
     ASSERT_STRING("Hi123", s);
 }
 
+void test_removeNonLetters_NoSpacesBetweenCharacter() {
+    char s[] = "Hi123";
+    removeNonLetters(s);
+    ASSERT_STRING("Hi123", s);
+}
+
+void test_removeNonLetters_AllCharactersAreSpaces() {
+    char s[] = "      ";
+    removeNonLetters(s);
+    ASSERT_STRING("", s);
+}
+
+void test_removeNonLetters_task1() {
+    test_removeNonLetters_spacesBetweenEachCharacter();
+    test_removeNonLetters_NoSpacesBetweenCharacter();
+    test_removeNonLetters_AllCharactersAreSpaces();
+}
 
 #endif

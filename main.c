@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "libs/data_structures/string_/string_.h"
 #include "libs/data_structures/string_/tasks/task1.h"
+#include "libs/data_structures/string_/tasks/task2.h"
 
 void test_strlen_() {
     char s[11] = "fatalerror";
@@ -240,7 +241,7 @@ void test_copyIfReverse() {
     test_copyIfReverse_mixedElements();
 }
 
-void test() {
+void test_functions() {
     test_strlen();
     test_find();
     test_findNonSpace();
@@ -253,8 +254,17 @@ void test() {
     test_copyIfReverse();
 }
 
+void test_tasks() {
+    test_removeNonLetters_task1();
+    test_removeExtraSpaces();
+}
+
+void test() {
+    test_functions();
+    test_tasks();
+}
+
 int main() {
     test();
-    test_digitToStartTransform_oneWord();
     return 0;
 }

@@ -12,4 +12,5 @@ CMakeFiles/lab5e.dir/main.c.obj: \
  ../libs/algorithms/algorithms.h \
  ../libs/data_structures/string_/string_.h \
  ../libs/data_structures/string_/tasks/task1.h \
+ ../libs/data_structures/string_/tasks/task2.h \
  ../main.c
