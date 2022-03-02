@@ -95,6 +95,9 @@
 		<Unit filename="D:/Program Files/CLionProjects/lab5e/libs/data_structures/string_/tasks/task3.h">
 			<Option target="lab5e"/>
 		</Unit>
+		<Unit filename="D:/Program Files/CLionProjects/lab5e/libs/data_structures/string_/tasks/task4.h">
+			<Option target="lab5e"/>
+		</Unit>
 		<Unit filename="D:/Program Files/CLionProjects/lab5e/main.c">
 			<Option target="lab5e"/>
 		</Unit>

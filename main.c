@@ -3,6 +3,7 @@
 #include "libs/data_structures/string_/tasks/task1.h"
 #include "libs/data_structures/string_/tasks/task2.h"
 #include "libs/data_structures/string_/tasks/task3.h"
+#include "libs/data_structures/string_/tasks/task4.h"
 
 void test_strlen_() {
     char s[11] = "fatalerror";
@@ -268,5 +269,6 @@ void test() {
 
 int main() {
     test();
+    test_replacesNumbersWithSpaces();
     return 0;
 }

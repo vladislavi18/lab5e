@@ -26,31 +26,31 @@ void digitToStartString(char *s) {
 }
 
 void test_digitToStartString_stringIsEmpty() {
-    char s[] = "";
+    char s[MAX_STRING_SIZE] = "";
     digitToStartString(s);
     ASSERT_STRING("", s);
 }
 
 void test_digitToStartString_numberByWord() {
-    char s[] = "Hi123";
+    char s[MAX_STRING_SIZE] = "Hi123";
     digitToStartString(s);
     ASSERT_STRING("123Hi", s);
 }
 
 void test_digitToStartString_numberByWordTwo() {
-    char s[] = "Hi123 Rand456";
+    char s[MAX_STRING_SIZE] = "Hi123 Rand456";
     digitToStartString(s);
     ASSERT_STRING("123Hi 456Rand", s);
 }
 
 void test_digitToStartString_numbersAtBeginningAndEndOfWord() {
-    char s[] = "Hi123 4Rand56";
+    char s[MAX_STRING_SIZE] = "Hi123 4Rand56";
     digitToStartString(s);
     ASSERT_STRING("123Hi 456Rand", s);
 }
 
 void test_digitToStartString_numbersAndLettersSeparately() {
-    char s[] = "123 Rand";
+    char s[MAX_STRING_SIZE] = "123 Rand";
     digitToStartString(s);
     ASSERT_STRING("123 Rand", s);
 }
