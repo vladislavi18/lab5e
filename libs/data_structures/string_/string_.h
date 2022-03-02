@@ -73,4 +73,13 @@ void assertString(const char *expected, char *got,
                   char const *fileName, char const *funcName,
                   int line);
 
+typedef struct WordDescriptor {
+    char *begin; // позиция начала слова
+    char *end; // позиция первого символа, после последнего символа слова
+} WordDescriptor;
+
+int getWord(char *beginSearch, WordDescriptor *word);
+
+bool getWordReverse(char *rbegin, char *rend, WordDescriptor *word);
+
 #endif //LAB5E_STRING__H

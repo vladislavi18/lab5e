@@ -2,6 +2,7 @@
 #include "libs/data_structures/string_/string_.h"
 #include "libs/data_structures/string_/tasks/task1.h"
 #include "libs/data_structures/string_/tasks/task2.h"
+#include "libs/data_structures/string_/tasks/task3.h"
 
 void test_strlen_() {
     char s[11] = "fatalerror";
@@ -257,6 +258,7 @@ void test_functions() {
 void test_tasks() {
     test_removeNonLetters_task1();
     test_removeExtraSpaces();
+    test_digitToStartString();
 }
 
 void test() {

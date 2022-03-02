@@ -19,6 +19,7 @@ void removeExtraSpaces(char *s) {
 
     *dst = '\0';
 }
+
 void test_removeExtraSpaces_() {
     char s[100] = " ab   c  d e ";
     removeExtraSpaces(s);
@@ -42,4 +43,5 @@ void test_removeExtraSpaces() {
     test_removeExtraSpaces_allSpaces();
     test_removeExtraSpaces_stringIsEmpty();
 }
+
 #endif
