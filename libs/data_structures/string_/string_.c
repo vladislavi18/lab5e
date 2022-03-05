@@ -46,7 +46,7 @@ int strcmp_(const char *lhs, const char *rhs) {
         lhs++;
         rhs++;
     }
-    return (unsigned char) *lhs - (unsigned char) *rhs;
+    return *lhs - *rhs;
 }
 
 char *copy(const char *beginSource, const char *endSource,

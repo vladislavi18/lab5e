@@ -4,6 +4,7 @@
 #include "libs/data_structures/string_/tasks/task2.h"
 #include "libs/data_structures/string_/tasks/task3.h"
 #include "libs/data_structures/string_/tasks/task4.h"
+#include "libs/data_structures/string_/tasks/task6.h"
 
 void test_strlen_() {
     char s[11] = "fatalerror";
@@ -258,8 +259,10 @@ void test_functions() {
 
 void test_tasks() {
     test_removeNonLetters_task1();
-    test_removeExtraSpaces();
-    test_digitToStartString();
+    test_removeExtraSpaces_task2();
+    test_digitToStartString_task3();
+    test_replacesNumbersWithSpaces_task4();
+    test_areWordsOrdered_task6();
 }
 
 void test() {
@@ -269,6 +272,6 @@ void test() {
 
 int main() {
     test();
-    test_replacesNumbersWithSpaces();
+
     return 0;
 }

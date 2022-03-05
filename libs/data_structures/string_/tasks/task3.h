@@ -55,7 +55,7 @@ void test_digitToStartString_numbersAndLettersSeparately() {
     ASSERT_STRING("123 Rand", s);
 }
 
-void test_digitToStartString() {
+void test_digitToStartString_task3() {
     test_digitToStartString_stringIsEmpty();
     test_digitToStartString_numberByWord();
     test_digitToStartString_numberByWordTwo();

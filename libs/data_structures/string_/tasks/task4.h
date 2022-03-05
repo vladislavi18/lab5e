@@ -48,7 +48,7 @@ void test_replacesNumbersWithSpaces_lettersAndDigits() {
     ASSERT_STRING("A   BC ", s);
 }
 
-void test_replacesNumbersWithSpaces() {
+void test_replacesNumbersWithSpaces_task4() {
     test_replacesNumbersWithSpaces_stringIsEmpty();
     test_replacesNumbersWithSpaces_onlyLetters();
     test_replacesNumbersWithSpaces_onlydigits();
