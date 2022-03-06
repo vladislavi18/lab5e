@@ -5,6 +5,8 @@
 #include "libs/data_structures/string_/tasks/task3.h"
 #include "libs/data_structures/string_/tasks/task4.h"
 #include "libs/data_structures/string_/tasks/task6.h"
+#include "libs/data_structures/string_/tasks/task7.h"
+#include "libs/data_structures/string_/tasks/task8.h"
 
 void test_strlen_() {
     char s[11] = "fatalerror";
@@ -272,6 +274,6 @@ void test() {
 
 int main() {
     test();
-
+    test_howManyWordsPalindromes();
     return 0;
 }

@@ -79,6 +79,15 @@ char *copyIfReverse(char *rbeginSource, const char *rendSource,
     return beginDestination;
 }
 
+char *copyReverse(char *rbeginSource, const char *rendSource,
+                  char *beginDestination) {
+    while (rbeginSource != rendSource) {
+        *beginDestination++ = *rbeginSource;
+        rbeginSource--;
+    }
+    return beginDestination;
+}
+
 void assertString(const char *expected, char *got,
                   char const *fileName, char const *funcName,
                   int line) {
@@ -102,7 +111,17 @@ int getWord(char *beginSearch, WordDescriptor *word) {
 bool getWordReverse(char *rbegin, char *rend, WordDescriptor *word) {
     word->begin = findNonSpaceReverse(rbegin, rend);
     if (word->begin == rend)
-        return 0;
+        return false;
     word->end = findSpaceReverse(word->begin, rend);
-    return 1;
+    return true;
+}
+
+void getBagOfWords(BagOfWords *bag, char *s) {
+    bag->size = 0;
+    WordDescriptor word;
+    while (getWord(s, &word)) {
+        bag->words[bag->size] = word;
+        bag->size++;
+        s = word.end;
+    }
 }
