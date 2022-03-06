@@ -265,6 +265,7 @@ void test_tasks() {
     test_digitToStartString_task3();
     test_replacesNumbersWithSpaces_task4();
     test_areWordsOrdered_task6();
+    test_howManyWordsPalindromes();
 }
 
 void test() {
@@ -274,6 +275,5 @@ void test() {
 
 int main() {
     test();
-    test_howManyWordsPalindromes();
     return 0;
 }
