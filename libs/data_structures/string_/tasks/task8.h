@@ -62,7 +62,7 @@ void test_howManyWordsPalindromes_OneSymbol() {
     assert(howManyWordsPalindromes(s) == 1);
 }
 
-void test_howManyWordsPalindromes() {
+void test_howManyWordsPalindromes_task8() {
     test_howManyWordsPalindromes_stringIsEmpty();
     test_howManyWordsPalindromes_oneWOrdIsPalindrome();
     test_howManyWordsPalindromes_twoWordsIsPalindrome();

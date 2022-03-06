@@ -52,6 +52,10 @@ D:/Program Files/CLionProjects/lab5e/libs/data_structures/string_/tasks/task8.h
 ../string_.h
 D:/Program Files/CLionProjects/lab5e/libs/data_structures/string_/string_.h
 
+D:/Program Files/CLionProjects/lab5e/libs/data_structures/string_/tasks/task9.h
+../string_.h
+D:/Program Files/CLionProjects/lab5e/libs/data_structures/string_/string_.h
+
 D:/Program Files/CLionProjects/lab5e/main.c
 stdio.h
 -
@@ -71,4 +75,6 @@ libs/data_structures/string_/tasks/task7.h
 D:/Program Files/CLionProjects/lab5e/libs/data_structures/string_/tasks/task7.h
 libs/data_structures/string_/tasks/task8.h
 D:/Program Files/CLionProjects/lab5e/libs/data_structures/string_/tasks/task8.h
+libs/data_structures/string_/tasks/task9.h
+D:/Program Files/CLionProjects/lab5e/libs/data_structures/string_/tasks/task9.h
 

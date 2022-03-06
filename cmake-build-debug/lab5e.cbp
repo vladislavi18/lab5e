@@ -89,6 +89,9 @@
 		<Unit filename="D:/Program Files/CLionProjects/lab5e/libs/data_structures/string_/tasks/task1.h">
 			<Option target="lab5e"/>
 		</Unit>
+		<Unit filename="D:/Program Files/CLionProjects/lab5e/libs/data_structures/string_/tasks/task10.h">
+			<Option target="lab5e"/>
+		</Unit>
 		<Unit filename="D:/Program Files/CLionProjects/lab5e/libs/data_structures/string_/tasks/task2.h">
 			<Option target="lab5e"/>
 		</Unit>
@@ -108,6 +111,9 @@
 			<Option target="lab5e"/>
 		</Unit>
 		<Unit filename="D:/Program Files/CLionProjects/lab5e/libs/data_structures/string_/tasks/task8.h">
+			<Option target="lab5e"/>
+		</Unit>
+		<Unit filename="D:/Program Files/CLionProjects/lab5e/libs/data_structures/string_/tasks/task9.h">
 			<Option target="lab5e"/>
 		</Unit>
 		<Unit filename="D:/Program Files/CLionProjects/lab5e/main.c">

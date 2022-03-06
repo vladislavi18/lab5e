@@ -7,6 +7,8 @@
 #include "libs/data_structures/string_/tasks/task6.h"
 #include "libs/data_structures/string_/tasks/task7.h"
 #include "libs/data_structures/string_/tasks/task8.h"
+#include "libs/data_structures/string_/tasks/task9.h"
+#include "libs/data_structures/string_/tasks/task10.h"
 
 void test_strlen_() {
     char s[11] = "fatalerror";
@@ -265,7 +267,8 @@ void test_tasks() {
     test_digitToStartString_task3();
     test_replacesNumbersWithSpaces_task4();
     test_areWordsOrdered_task6();
-    test_howManyWordsPalindromes();
+    test_howManyWordsPalindromes_task8();
+    test_alternatingWords_task9();
 }
 
 void test() {

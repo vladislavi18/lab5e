@@ -18,4 +18,5 @@ CMakeFiles/lab5e.dir/main.c.obj: \
  ../libs/data_structures/string_/tasks/task6.h \
  ../libs/data_structures/string_/tasks/task7.h \
  ../libs/data_structures/string_/tasks/task8.h \
+ ../libs/data_structures/string_/tasks/task9.h \
  ../main.c
