@@ -38,7 +38,7 @@ void test_alternatingWords_oneStringIsEmty() {
     char s1[] = "word";
     char s2[] = "";
     char s3[MAX_STRING_SIZE];
-    ASSERT_STRING("", alternatingWords(s1,s2,s3));
+    ASSERT_STRING("word", alternatingWords(s1,s2,s3));
 }
 
 void test_alternatingWords_twoStringsNotEmpty() {

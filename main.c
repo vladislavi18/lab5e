@@ -269,6 +269,7 @@ void test_tasks() {
     test_areWordsOrdered_task6();
     test_howManyWordsPalindromes_task8();
     test_alternatingWords_task9();
+    test_task10();
 }
 
 void test() {
