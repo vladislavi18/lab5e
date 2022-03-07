@@ -5,10 +5,10 @@
 #include "libs/data_structures/string_/tasks/task3.h"
 #include "libs/data_structures/string_/tasks/task4.h"
 #include "libs/data_structures/string_/tasks/task6.h"
-#include "libs/data_structures/string_/tasks/task7.h"
 #include "libs/data_structures/string_/tasks/task8.h"
 #include "libs/data_structures/string_/tasks/task9.h"
 #include "libs/data_structures/string_/tasks/task10.h"
+#include "libs/data_structures/string_/tasks/task11.h"
 
 void test_strlen_() {
     char s[11] = "fatalerror";
@@ -270,6 +270,7 @@ void test_tasks() {
     test_howManyWordsPalindromes_task8();
     test_alternatingWords_task9();
     test_task10();
+    testAll_getWordBeforeFirstWordWithA();
 }
 
 void test() {
