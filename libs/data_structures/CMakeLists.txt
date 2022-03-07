@@ -14,6 +14,10 @@ add_library(data_structures
         string_/tasks/task12.h
         string_/tasks/task13.h
         string_/tasks/task14.h
-        string_/tasks/task15.h)
+        string_/tasks/task15.h
+        string_/tasks/task16.h
+        string_/tasks/task17.h
+        string_/tasks/task18.h
+        string_/tasks/task19.h)
 
 target_link_libraries(data_structures algorithms)

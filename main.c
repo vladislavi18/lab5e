@@ -13,6 +13,8 @@
 #include "libs/data_structures/string_/tasks/task13.h"
 #include "libs/data_structures/string_/tasks/task14.h"
 #include "libs/data_structures/string_/tasks/task15.h"
+#include "libs/data_structures/string_/tasks/task18.h"
+#include "libs/data_structures/string_/tasks/task19.h"
 
 void test_strlen_() {
     char s[11] = "fatalerror";
@@ -279,6 +281,8 @@ void test_tasks() {
     test_wordsInStringAreEqual_task13();
     test_areWordsFromSameLetters_task14();
     test_lineWithWordsOtherThanLast_task15();
+    test_addMissingWords();
+    test_allLettersOfWordAreIncludedInString();
 }
 
 void test() {

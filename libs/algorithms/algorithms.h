@@ -15,4 +15,6 @@ int isEvenSymbol(int a);
 
 char *getEndOfString (char *s);
 
+int max2(int a, int b);
+
 #endif //LAB5E_ALGORITHMS_H

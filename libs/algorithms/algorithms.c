@@ -25,3 +25,7 @@ char *getEndOfString(char *s) {
         s++;
     return s;
 }
+
+int max2(int a, int b) {
+    return a > b ? a : b;
+}
