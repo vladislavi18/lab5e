@@ -69,4 +69,5 @@ void test_howManyWordsPalindromes_task8() {
     test_howManyWordsPalindromes_onePallAndOneNot();
     test_howManyWordsPalindromes_OneSymbol();
 }
+
 #endif

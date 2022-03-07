@@ -62,4 +62,5 @@ void test_digitToStartString_task3() {
     test_digitToStartString_numbersAtBeginningAndEndOfWord();
     test_digitToStartString_numbersAndLettersSeparately();
 }
+
 #endif //LAB5E_TASK3_H

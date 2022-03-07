@@ -11,6 +11,7 @@
 #include "libs/data_structures/string_/tasks/task11.h"
 #include "libs/data_structures/string_/tasks/task12.h"
 #include "libs/data_structures/string_/tasks/task13.h"
+#include "libs/data_structures/string_/tasks/task14.h"
 
 void test_strlen_() {
     char s[11] = "fatalerror";
@@ -272,8 +273,9 @@ void test_tasks() {
     test_howManyWordsPalindromes_task8();
     test_alternatingWords_task9();
     test_task10();
-    testAll_getWordBeforeFirstWordWithA();
+    testAll_getWordBeforeFirstWordWithA_task11();
     test_lastWordInFirstStringIsInSecondString_task12();
+    test_wordsInStringAreEqual_task13();
 }
 
 void test() {

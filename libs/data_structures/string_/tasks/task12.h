@@ -8,7 +8,7 @@ WordDescriptor lastWordInFirstStringIsInSecondString(char *string1, char *string
     getBagOfWords(&_bag2, string2);
     for (int i = _bag.size - 1; i >= 0; --i) {
         for (int j = 0; j < _bag2.size; ++j) {
-            if(areWordsEqual(_bag.words[i], _bag2.words[j]) == 0)
+            if (areWordsEqual(_bag.words[i], _bag2.words[j]) == 0)
                 return _bag.words[i];
         }
     }

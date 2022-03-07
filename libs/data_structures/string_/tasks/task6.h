@@ -51,4 +51,5 @@ void test_areWordsOrdered_task6() {
     test_areWordsOrdered_TwoWordsEqual();
     test_areWordsOrdered_orderedString();
 }
+
 #endif

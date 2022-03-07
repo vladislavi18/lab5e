@@ -19,7 +19,8 @@ WordBeforeFirstWordWithAReturnCode getWordBeforeFirstWordWithA(char *s, char **b
     else if (find(word.begin, word.end, 'A') != word.end || find(word.begin, word.end, 'a') != word.end)
         return FIRST_WORD_WITH_A;
     while (getWord(begin, &nextWord)) {
-        if(find(nextWord.begin, nextWord.end, 'A') != nextWord.end || find(nextWord.begin, nextWord.end, 'a') != nextWord.end) {
+        if (find(nextWord.begin, nextWord.end, 'A') != nextWord.end ||
+            find(nextWord.begin, nextWord.end, 'a') != nextWord.end) {
             *beginWordBefore = word.begin;
             *endWordBefore = word.end;
             return WORD_FOUND;
@@ -31,7 +32,7 @@ WordBeforeFirstWordWithAReturnCode getWordBeforeFirstWordWithA(char *s, char **b
 }
 
 
-void testAll_getWordBeforeFirstWordWithA() {
+void testAll_getWordBeforeFirstWordWithA_task11() {
     char *beginWord, *endWord;
 
     char s1[] = "";

@@ -25,6 +25,7 @@ void replacesWord(char *source, WordDescriptor word1, WordDescriptor word2, size
         word2.begin++;
     }
 }
+
 void replace(char *source, char *w1, char *w2) {
     size_t w1Size = strlen(w1);
     size_t w2Size = strlen(w2);
