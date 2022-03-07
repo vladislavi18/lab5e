@@ -100,4 +100,8 @@ BagOfWords _bag2;
 
 void getBagOfWords(BagOfWords *bag, char *s);
 
+int areWordsEqual(WordDescriptor w1, WordDescriptor w2);
+
+void wordDescriptorToString(WordDescriptor word, char *destination);
+
 #endif //LAB5E_STRING__H

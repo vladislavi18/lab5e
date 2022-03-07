@@ -9,7 +9,7 @@ bool areWordsOrdered(char *string) {
     if (getWord(string, &word1)) {
         word2 = word1;
         while (getWord(string, &word1)) {
-            if (strcmp_(word1.begin, word2.begin) < 0)
+            if (areWordsEqual(word1, word2) < 0)
                 return false;
             word2 = word1;
             string = word1.end;
@@ -34,6 +34,11 @@ void test_areWordsOrdered_NotorderedString() {
     assert(areWordsOrdered(s) == false);
 }
 
+void test_areWordsOrdered_TwoWordsEqual() {
+    char s[] = "pass pass";
+    assert(areWordsOrdered(s) == true);
+}
+
 void test_areWordsOrdered_orderedString() {
     char s[] = "a ab baaa ca cd";
     assert(areWordsOrdered(s) == true);
@@ -43,6 +48,7 @@ void test_areWordsOrdered_task6() {
     test_areWordsOrdered_stringIsEmpty();
     test_areWordsOrdered_oneWordInString();
     test_areWordsOrdered_NotorderedString();
+    test_areWordsOrdered_TwoWordsEqual();
     test_areWordsOrdered_orderedString();
 }
 #endif

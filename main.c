@@ -9,6 +9,8 @@
 #include "libs/data_structures/string_/tasks/task9.h"
 #include "libs/data_structures/string_/tasks/task10.h"
 #include "libs/data_structures/string_/tasks/task11.h"
+#include "libs/data_structures/string_/tasks/task12.h"
+#include "libs/data_structures/string_/tasks/task13.h"
 
 void test_strlen_() {
     char s[11] = "fatalerror";
@@ -271,6 +273,7 @@ void test_tasks() {
     test_alternatingWords_task9();
     test_task10();
     testAll_getWordBeforeFirstWordWithA();
+    test_lastWordInFirstStringIsInSecondString_task12();
 }
 
 void test() {
