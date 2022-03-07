@@ -5,12 +5,11 @@
 
 bool wordsInStringAreEqual(char *string1) {
     getBagOfWords(&_bag, string1);
-    for (int i = 0; i < _bag.size; ++i) {
-        for (int j = i + 1; j < _bag.size; ++j) {
+    for (int i = 0; i < _bag.size; ++i)
+        for (int j = i + 1; j < _bag.size; ++j)
             if (areWordsEqual(_bag.words[i], _bag.words[j]) == 0)
                 return true;
-        }
-    }
+
     return false;
 }
 

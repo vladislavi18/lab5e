@@ -125,12 +125,14 @@ void getBagOfWords(BagOfWords *bag, char *s) {
         s = word.end;
     }
 }
+
 int areWordsEqual(WordDescriptor w1, WordDescriptor w2) {
-    while (w1.begin != w1.end && w2.begin != w2.end && w1.begin == w2.begin) {
-        w1.begin++;
-        w2.begin++;
-    }
-    return *w1.begin - *w2.begin;
+    char *begin1 = w1.begin;
+    char *begin2 = w2.begin;
+    while (begin1 != w1.end - 1 && (*begin1 == *begin2))
+        begin1++, begin2++;
+
+    return *begin1 - *begin2;
 }
 
 void wordDescriptorToString(WordDescriptor word, char *destination) {

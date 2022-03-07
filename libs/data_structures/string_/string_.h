@@ -5,7 +5,7 @@
 #include <ctype.h>
 #include <assert.h>
 #include <memory.h>
-#include <malloc.h>
+#include <stdlib.h>
 
 // возвращает количество символов в строке
 // (не считая ноль-символ)

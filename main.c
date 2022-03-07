@@ -276,6 +276,7 @@ void test_tasks() {
     testAll_getWordBeforeFirstWordWithA_task11();
     test_lastWordInFirstStringIsInSecondString_task12();
     test_wordsInStringAreEqual_task13();
+    test_areWordsFromSameLetters_task14();
 }
 
 void test() {
