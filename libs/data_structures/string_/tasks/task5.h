@@ -3,29 +3,6 @@
 
 #include "../string_.h"
 
-bool comparisonWords(char *string, char *word) {
-    char *copyString = string;
-    char *copyWord = word;
-    while (*copyString != ' ' && *copyString != '\0') {
-        if (*copyString != *copyWord)
-            return false;
-        copyString++;
-        copyWord++;
-    }
-    return true;
-}
-
-void replacesWord(char *source, WordDescriptor word1, WordDescriptor word2, size_t w2Size) {
-    while (*w2Size != 0) {
-        *source = *word2.begin;
-        w2Size--;
-    }
-    while (word1.end - 1 - word2.begin != 0) {
-        *source = ' ';
-        word2.begin++;
-    }
-}
-
 void replace(char *source, char *w1, char *w2) {
     size_t w1Size = strlen(w1);
     size_t w2Size = strlen(w2);
@@ -41,11 +18,67 @@ void replace(char *source, char *w1, char *w2) {
         readPtr = stringBuffer;
         recPtr = source;
     }
-    char *copySource = source;
-    size_t copyW2Size = w2Size;
-    if (comparisonWords(copySource, w1)) {
-        replacesWord(copySource, word1, word2, copyW2Size);
+
+    WordDescriptor curWord;
+    while (getWord(readPtr, &curWord)) {
+        recPtr = copy(readPtr, curWord.begin, recPtr);
+        if (areWordsEqual(curWord, word1) == 0) {
+            recPtr = copy(word2.begin, word2.end, recPtr);
+        } else {
+            recPtr = copy(curWord.begin, curWord.end, recPtr);
+        }
+        readPtr = curWord.end;
     }
+
+    *recPtr = '\0';
+}
+
+void test_replace_stringsAreEmpty() {
+    char s[MAX_STRING_SIZE] = "";
+    char *word1 = "";
+    char *word2 = "";
+    replace(s, word1, word2);
+    ASSERT_STRING("", s);
+}
+
+void test_replace_stringIsEmpty() {
+    char s[MAX_STRING_SIZE] = "";
+    char *word1 = "abc";
+    char *word2 = "cab";
+    replace(s, word1, word2);
+    ASSERT_STRING("", s);
+}
+
+void test_replace_firstWordLessThenSecond() {
+    char s[MAX_STRING_SIZE] = "aaa bbb ccc aaa";
+    char *word1 = "aaa";
+    char *word2 = "small";
+    replace(s, word1, word2);
+    ASSERT_STRING("small bbb ccc small", s);
+}
+
+void test_replace_firstWordIsGreaterThenSecond() {
+    char s[MAX_STRING_SIZE] = "hello world hello";
+    char *word1 = "hello";
+    char *word2 = "bye";
+    replace(s, word1, word2);
+    ASSERT_STRING("bye world bye", s);
+}
+
+void test_replace_firstWordIsNotInString() {
+    char s[MAX_STRING_SIZE] = "hello world hello";
+    char *word1 = "aaa";
+    char *word2 = "bye";
+    replace(s, word1, word2);
+    ASSERT_STRING("hello world hello", s);
+}
+
+void test_replace_task5() {
+    test_replace_stringsAreEmpty();
+    test_replace_stringIsEmpty();
+    test_replace_firstWordLessThenSecond();
+    test_replace_firstWordIsGreaterThenSecond();
+    test_replace_firstWordIsNotInString();
 }
 
 #endif

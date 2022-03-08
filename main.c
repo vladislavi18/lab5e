@@ -4,6 +4,7 @@
 #include "libs/data_structures/string_/tasks/task2.h"
 #include "libs/data_structures/string_/tasks/task3.h"
 #include "libs/data_structures/string_/tasks/task4.h"
+#include "libs/data_structures/string_/tasks/task5.h"
 #include "libs/data_structures/string_/tasks/task6.h"
 #include "libs/data_structures/string_/tasks/task8.h"
 #include "libs/data_structures/string_/tasks/task9.h"
@@ -272,6 +273,7 @@ void test_tasks() {
     test_removeExtraSpaces_task2();
     test_digitToStartString_task3();
     test_replacesNumbersWithSpaces_task4();
+    test_replace_task5();
     test_areWordsOrdered_task6();
     test_howManyWordsPalindromes_task8();
     test_alternatingWords_task9();
